@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Inter, sans-serif;
+    }
+
+    .container {
+      width: 1440px;
+      height: 1024px;
+      position: relative;
+      background: #FFFFFF;
+      overflow: hidden;
+    }
+
+    .circle-icon {
+      width: 78px;
+      height: 78px;
+      background: #D9D9D9;
+      border-radius: 9999px;
+      position: absolute;
+    }
+
+    .circle-1 { left: 151px; top: 50px; }
+    .circle-2 { left: 1074px; top: 50px; }
+    .circle-3 { left: 1260px; top: 50px; }
+
+    .text-number {
+      position: absolute;
+      text-align: center;
+      color: black;
+      font-size: 48px;
+      font-weight: 700;
+    }
+
+    .number-1 { left: 178px; top: 60px; }
+    .number-2 { left: 1098px; top: 60px; }
+    .number-3 { left: 1282px; top: 60px; }
+
+    .title-text {
+      position: absolute;
+      left: 252px;
+      top: 69px;
+      text-align: center;
+      color: black;
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .line-1 {
+      width: 641px;
+      height: 0;
+      position: absolute;
+      left: 414px;
+      top: 89px;
+      outline: 1px rgba(0, 0, 0, 0.40) solid;
+      outline-offset: -0.50px;
+    }
+
+    .line-2 {
+      width: 70px;
+      height: 0;
+      position: absolute;
+      left: 1171px;
+      top: 89px;
+      outline: 1px rgba(0, 0, 0, 0.40) solid;
+      outline-offset: -0.50px;
+    }
+
+    .subtitle-text {
+      position: absolute;
+      left: 164px;
+      top: 171px;
+      text-align: center;
+      color: black;
+      font-size: 48px;
+      font-weight: 700;
+    }
+
+    .guide-box {
+      width: 1140px;
+      height: 561px;
+      position: absolute;
+      left: 150px;
+      top: 253px;
+      background: #828282;
+      border-radius: 30px;
+    }
+
+    .photo-area {
+      width: 662px;
+      height: 384px;
+      position: absolute;
+      left: 389px;
+      top: 342px;
+      border-radius: 20px;
+      border: 1px #1277FF solid;
+    }
+
+    .scan-box {
+      width: 662px;
+      height: 250px;
+      position: absolute;
+      left: 389px;
+      top: 342px;
+      background: rgba(217, 217, 217, 0.67);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 20px;
+    }
+
+    .success-icon {
+      width: 104px;
+      height: 96px;
+      position: absolute;
+      left: 668px;
+      top: 766px;
+      background: #44FF06;
+      border-radius: 9999px;
+    }
+
+    .loading-text {
+      position: absolute;
+      left: 399px;
+      top: 875px;
+      color: rgba(0, 0, 0, 0.61);
+      font-size: 24px;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    .button {
+      width: 254px;
+      height: 83px;
+      position: absolute;
+      left: 1133px;
+      top: 885px;
+      background: #258BFF;
+      border-radius: 50px;
+    }
+
+    .button-text {
+      position: absolute;
+      left: 1188px;
+      top: 907px;
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .small-box {
+      width: 35px;
+      height: 45.61px;
+      position: absolute;
+      left: 66px;
+      top: 62px;
+      background: black;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Circle Icons -->
+    <div class="circle-icon circle-1"></div>
+    <div class="circle-icon circle-2"></div>
+    <div class="circle-icon circle-3"></div>
+
+    <!-- Numbers -->
+    <div class="text-number number-1">1</div>
+    <div class="text-number number-2">2</div>
+    <div class="text-number number-3">3</div>
+
+    <!-- Titles -->
+    <div class="title-text">Foto KTP</div>
+    <div class="subtitle-text">Foto berhasil dipindai!</div>
+
+    <!-- Lines -->
+    <div class="line-1"></div>
+    <div class="line-2"></div>
+
+    <!-- Guide Box -->
+    <div class="guide-box"></div>
+
+    <!-- Photo Area -->
+    <img class="photo-area" src="https://placehold.co/662x384" alt="KTP photo" />
+
+    <!-- Scan Box -->
+    <div class="scan-box"></div>
+
+    <!-- Success Icon -->
+    <div class="success-icon"></div>
+
+    <!-- Loading Text -->
+    <div class="loading-text">Data dirimu terisi secara otomatis di halaman berikutnya.<br/>Mohon cek datanya dan pastikan sudah benarya.</div>
+
+    <!-- Button -->
+    <div class="button"></div>
+    <div class="button-text">Cek Data</div>
+
+    <!-- Small Box -->
+    <div class="small-box"></div>
+  </div>
+
+</body>
+</html>

@@ -1,18 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Penyedia - Landing</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Inter, sans-serif;
+    }
+
+    .container {
+      width: 1440px;
+      height: 1024px;
+      position: relative;
+      background: #007AFF; /* Blue background */
+      overflow: hidden;
+    }
+
+    .rounded-box {
+      width: 738px;
+      height: 570px;
+      position: absolute;
+      left: 23px;
+      top: 151px;
+      background: #D9D9D9;
+      border-radius: 9999px;
+    }
+
+    .image {
+      width: 1025.56px;
+      height: 694.65px;
+      position: absolute;
+      left: -156.32px;
+      top: 69.98px;
+    }
+
+    .text-title {
+      width: 719px;
+      height: 172px;
+      position: absolute;
+      left: 720px;
+      top: 289px;
+      text-align: center;
+      color: white;
+      font-size: 96px;
+      font-weight: 700;
+      word-wrap: break-word;
+    }
+
+    .button-background {
+      width: 731px;
+      height: 68px;
+      position: absolute;
+      left: 354px;
+      top: 899px;
+      background: white;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 50px;
+    }
+
+    .button-text {
+      width: 477.96px;
+      height: 34.60px;
+      position: absolute;
+      left: 481px;
+      top: 916px;
+      text-align: center;
+      color: #4C8FE9;
+      font-size: 24px;
+      font-weight: 700;
+      word-wrap: break-word;
+    }
+  </style>
 </head>
 <body>
+
   <div class="container">
-    <div class="circle-bg"></div>
-    <img class="main-image" src="https://placehold.co/1026x695" alt="Healing Image" />
-    <div class="headline">Enjoy<br />Your Healing</div>
-    <div class="button-bg"></div>
+    <!-- Rounded Box -->
+    <div class="rounded-box"></div>
+
+    <!-- Image -->
+    <img class="image" src="https://placehold.co/1026x695" alt="Placeholder Image">
+
+    <!-- Title Text -->
+    <div class="text-title">Enjoy<br/>Your Healing</div>
+
+    <!-- Button Background -->
+    <div class="button-background"></div>
+
+    <!-- Button Text -->
     <a href="panduan-ktp.html" class="button-text">Get Started</a>
   </div>
+
 </body>
 </html>
