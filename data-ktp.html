@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verifikasi KTP</title>
+  <style>
+    body {
+      font-family: Inter, sans-serif;
+      background-color: #fff;
+    }
+    .container {
+      width: 1440px;
+      height: 1141px;
+      position: relative;
+      background: white;
+      overflow: hidden;
+      outline: 1px rgba(0, 0, 0, 0) solid;
+      outline-offset: -1px;
+    }
+    .circle {
+      width: 78px;
+      height: 78px;
+      position: absolute;
+      background: #D9D9D9;
+      border-radius: 50%;
+    }
+    .circle.active {
+      background: #44FF06;
+    }
+    .button {
+      width: 731px;
+      height: 68px;
+      position: absolute;
+      background: #258BFF;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 50px;
+      left: 363px;
+      top: 1001px;
+    }
+    .button-text {
+      position: absolute;
+      text-align: center;
+      color: #F5F5F5;
+      font-size: 24px;
+      font-weight: 700;
+      left: 490px;
+      top: 1018px;
+    }
+    .content-box {
+      width: 557px;
+      height: 405px;
+      position: absolute;
+      background: #F5F5F5;
+      border-radius: 20px;
+      border: 1px rgba(0, 0, 0, 0.19) solid;
+    }
+    .content-box.left {
+      left: 163px;
+      top: 479px;
+    }
+    .content-box.right {
+      left: 757px;
+      top: 479px;
+    }
+    .content-header {
+      position: absolute;
+      text-align: center;
+      color: black;
+      font-size: 32px;
+      font-weight: 700;
+      word-wrap: break-word;
+    }
+    .content-header.left {
+      left: 163px;
+      top: 427px;
+    }
+    .content-header.right {
+      left: 768px;
+      top: 427px;
+    }
+    .content-text {
+      color: black;
+      font-size: 26px;
+      font-weight: 500;
+      word-wrap: break-word;
+    }
+    .action-text {
+      text-align: center;
+      color: #258BFF;
+      font-size: 32px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .content-text-container {
+      position: absolute;
+      left: 163px;
+      top: 508px;
+    }
+    .toggle-text {
+      left: 217px;
+      top: 920px;
+      position: absolute;
+      color: rgba(0, 0, 0, 0.66);
+      font-size: 24px;
+      font-weight: 400;
+      word-wrap: break-word;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Circles -->
+    <div class="circle" style="left: 339px; top: 50px;"></div>
+    <div class="circle active" style="left: 1260px; top: 50px;"></div>
+    <div class="circle" style="left: 1282px; top: 60px;"></div>
+
+    <!-- Step Numbers -->
+    <div style="left: 362px; top: 60px; position: absolute; text-align: center; color: black; font-size: 48px; font-weight: 700;">2</div>
+    <div style="left: 1282px; top: 60px; position: absolute; text-align: center; color: black; font-size: 48px; font-weight: 700;">3</div>
+
+    <!-- Title -->
+    <div class="content-header left">Cek data diri dan alamat</div>
+    <div class="content-header" style="left: 437px; top: 67px; color: black; font-size: 32px; font-weight: 700;">Cek Data KTP</div>
+
+    <!-- Description -->
+    <div style="left: 164px; top: 252px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: black; font-size: 32px; font-weight: 400;">
+      Pastikan datamu sudah sesuai dengan data KTP. <br/>Silahkan ubah jika ada yang keliru.
+    </div>
+
+    <!-- Content Boxes -->
+    <div class="content-box left">
+        <div style="padding: 24px;">
+          <h3 class="content-header">Data Diri</h3>
+          <div class="content-text">NIK: 3171234567890123</div>
+          <div class="content-text">Nama Lengkap: Mira Setiawan</div>
+          <div class="content-text">Tempat/Tgl Lahir: Jakarta, 18-02-1986</div>
+          <div class="content-text">Email: fridawa@gmail.com</div>
+          <div class="content-text">Pendidikan Terakhir: S1 Ilmu Komputer</div>
+          <div class="content-text">No. Whatsapp: 088274018823</div>
+        </div>
+      </div>
+      
+      <div class="content-box right">
+        <div style="padding: 24px;">
+          <h3 class="content-header">Alamat di KTP</h3>
+          <div class="content-text">Negara: Indonesia</div>
+          <div class="content-text">Provinsi: Jawa Barat</div>
+          <div class="content-text">Kota/Kabupaten: Bandung</div>
+          <div class="content-text">Kecamatan: Kalideres</div>
+          <div class="content-text">Alamat: JL. Pasti Cepat</div>
+        </div>
+      </div>      
+      
+
+    <!-- Action Text -->
+    <div class="action-text" style="left: 611px; top: 508px;">Ubah</div>
+    <div class="action-text" style="left: 1231px; top: 508px;">Ubah</div>
+
+    <!-- Toggle -->
+    <div class="toggle-text">Alamat saya saat ini berbeda dari alamat KTP</div>
+
+    <!-- Submit Button -->
+    <div class="button">
+      <div class="button-text">Ajukan Verifikasi</div>
+    </div>
+  </div>
+
+</body>
+</html>

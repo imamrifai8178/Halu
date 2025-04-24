@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Inter, sans-serif;
+    }
+
+    .container {
+      width: 1440px;
+      height: 1024px;
+      position: relative;
+      background: #FFFFFF; /* Primary background */
+      overflow: hidden;
+    }
+
+    .button-background {
+      width: 731px;
+      height: 68px;
+      position: absolute;
+      left: 354px;
+      top: 899px;
+      background: #258BFF;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 50px;
+    }
+
+    .button-text {
+      width: 477.96px;
+      height: 34.60px;
+      position: absolute;
+      left: 481px;
+      top: 916px;
+      text-align: center;
+      color: #F5F5F5;
+      font-size: 24px;
+      font-weight: 700;
+      word-wrap: break-word;
+    }
+
+    .circle-icon {
+      width: 78px;
+      height: 78px;
+      background: #D9D9D9;
+      border-radius: 9999px;
+    }
+
+    .circle-1 {
+      position: absolute;
+      left: 151px;
+      top: 50px;
+    }
+
+    .circle-2 {
+      position: absolute;
+      left: 1074px;
+      top: 50px;
+    }
+
+    .circle-3 {
+      position: absolute;
+      left: 1260px;
+      top: 50px;
+    }
+
+    .text-number {
+      position: absolute;
+      text-align: center;
+      color: black;
+      font-size: 48px;
+      font-weight: 700;
+      word-wrap: break-word;
+    }
+
+    .number-1 {
+      left: 178px;
+      top: 60px;
+    }
+
+    .number-2 {
+      left: 1098px;
+      top: 60px;
+    }
+
+    .number-3 {
+      left: 1282px;
+      top: 60px;
+    }
+
+    .title-text {
+      position: absolute;
+      left: 252px;
+      top: 69px;
+      text-align: center;
+      color: black;
+      font-size: 32px;
+      font-weight: 700;
+      word-wrap: break-word;
+    }
+
+    .line-1 {
+      width: 641px;
+      height: 0;
+      position: absolute;
+      left: 414px;
+      top: 89px;
+      outline: 1px rgba(0, 0, 0, 0.40) solid;
+      outline-offset: -0.50px;
+    }
+
+    .line-2 {
+      width: 70px;
+      height: 0;
+      position: absolute;
+      left: 1171px;
+      top: 89px;
+      outline: 1px rgba(0, 0, 0, 0.40) solid;
+      outline-offset: -0.50px;
+    }
+
+    .subtitle-text {
+      position: absolute;
+      left: 164px;
+      top: 171px;
+      text-align: center;
+      color: black;
+      font-size: 48px;
+      font-weight: 700;
+      word-wrap: break-word;
+    }
+
+    .guide-box {
+      width: 1140px;
+      height: 396px;
+      position: absolute;
+      left: 150px;
+      top: 354px;
+      background: rgba(217, 217, 217, 0.44);
+      border-radius: 10px;
+    }
+
+    .instructions {
+      position: absolute;
+      left: 164px;
+      top: 272px;
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      color: black;
+      font-size: 32px;
+      font-weight: 400;
+      word-wrap: break-word;
+    }
+
+    .steps {
+      position: absolute;
+      left: 295px;
+      top: 435px;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      color: black;
+      font-size: 32px;
+      font-weight: 400;
+      word-wrap: break-word;
+    }
+
+    .circle-step-1, .circle-step-2, .circle-step-3 {
+      width: 31px;
+      height: 31px;
+      background: #BCB7B7;
+      border-radius: 9999px;
+      position: absolute;
+    }
+
+    .circle-step-1 { left: 229px; top: 435px; }
+    .circle-step-2 { left: 229px; top: 521px; }
+    .circle-step-3 { left: 229px; top: 630px; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Button -->
+    <div class="button-background"></div>
+    <a href="ambil-foto-ktp.html" class="button-text">Get Started</a>
+
+    <!-- Circle Icons -->
+    <div class="circle-icon circle-1"></div>
+    <div class="circle-icon circle-2"></div>
+    <div class="circle-icon circle-3"></div>
+
+    <!-- Numbers -->
+    <div class="text-number number-1">1</div>
+    <div class="text-number number-2">2</div>
+    <div class="text-number number-3">3</div>
+
+    <!-- Titles -->
+    <div class="title-text">Foto KTP</div>
+    <div class="subtitle-text">Panduan Foto KTP</div>
+
+    <!-- Lines -->
+    <div class="line-1"></div>
+    <div class="line-2"></div>
+
+    <!-- Guide Box and Instructions -->
+    <div class="guide-box"></div>
+    <div class="instructions">Pastikan foto yang kamu ambil nanti sesuai dengan panduan di bawah ini.</div>
+
+    <div class="steps">
+      Siapkan KTP asli, bukan fotokopian.<br/><br/>
+      Posisikan HP secara tegak saat mengambil foto.<br/>
+      Pastikan foto tidak buram atau terpotong.<br/><br/>
+      Foto tidak boleh berbayang atau memantulkan cahaya.
+    </div>
+
+    <!-- Step Circles -->
+    <div class="circle-step-1"></div>
+    <div class="circle-step-2"></div>
+    <div class="circle-step-3"></div>
+  </div>
+
+</body>
+</html>
